@@ -1,0 +1,19 @@
+image: node:10-alpine
+
+stages:
+  - install
+  - build
+  - test
+  - deploy
+
+install: 
+  - stage: install
+
+build:
+  - stage: build
+
+test:
+  - stage: test
+
+deploy:
+  - stage: deploy

@@ -1,0 +1,23 @@
+{
+	"translations": {
+		"app": "uygulama",
+		"catchWord": "",
+		"introWordFirst": "",
+		"introWordFirst": "",
+		"introWordFirst": "",
+		"english": "english",
+		"turkish": "turkish",
+		"login": "Login",
+		"signup": "Signup",
+		"continueWithFacebook": "Continue with Facebook",
+		"continueWithGoogle": "Continue with Google",
+		"dontHaveAnAccount": "Don't have an account? Signup",
+		"alreadyHaveAnAccount": "Already have an account? Login",
+		"forgotPassword": "forgot password?",
+		"rememberMe": "remember me",
+		"send": "Send",
+		"recover": "Recover",
+		"email": "e-mail",
+		"password": "password"
+	}
+}
