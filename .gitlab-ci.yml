@@ -7,13 +7,19 @@ stages:
   - deploy
 
 install: 
-  - stage: install
+  stage: install
+  script:
+    - CI=false yarn install
 
 build:
-  - stage: build
+  stage: build
+  script: 
+    - CI=false yarn build
 
 test:
-  - stage: test
+  stage: test
+  script:
+    - CI=false yarn test
 
 deploy:
-  - stage: deploy
+  stage: deploy
