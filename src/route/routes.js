@@ -9,4 +9,6 @@ export default {
 	twitter: '',
 	instagram: '',
 	linkedIn: '',
+	appStore: '',
+	playStore: '',
 }
