@@ -1,5 +1,6 @@
-import React, {Fragment} from 'react';
-import {I18nextProvider} from 'react-i18next'
+import React, {Fragment} from 'react'
+
+import { I18nextProvider } from 'react-i18next'
 import i18n from './locale/i18n'
 import Main from './page/landing/main/Main'
 import { ThemeProvider } from '@material-ui/core'
@@ -15,4 +16,4 @@ const App = () => {
 	</Fragment>
 }
 
-export default App;
+export default App
