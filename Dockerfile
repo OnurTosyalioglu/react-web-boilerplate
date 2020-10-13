@@ -8,5 +8,5 @@ RUN yarn build
 FROM nginx:stable-alpine
 COPY --from=build /app/build /usr/share/html/html
 EXPOSE 80
-CMD ["nginx", "-g", "deamın off;"]
+CMD ["nginx", "-g", "deamon off;"]
 
