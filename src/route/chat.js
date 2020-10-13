@@ -1,18 +1,20 @@
 import Inbox from '../page/chat/inbox/Inbox'
 import Conversation from '../page/chat/conversation/Conversation'
 
+import routes from './routes'
+
 const chat = [
 	{
 		exact: false,
-		path: '/inbox',
+		path: routes.inbox,
 		component: Inbox,
 		key: 'inbox',
 	},
 	{
 		exact: false,
-		path: '/conversation/:id',
+		path: routes.conversation,
 		component: Conversation,
-		key: 'converation',
+		key: routes.conversation,
 	},
 ]
 

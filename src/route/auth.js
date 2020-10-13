@@ -2,24 +2,26 @@ import Login from '../page/auth/login/Login'
 import Signup from '../page/auth/signup/Signup'
 import Recover from '../page/auth/recover/Recover'
 
+import routes from './routes'
+
 const auth = [
 	{
 		exact: false,
-		path: '/login',
+		path: routes.login,
 		component: Login,
-		key: 'login',
+		key: routes.login,
 	},
 	{
 		exact: false,
-		path: '/signup',
+		path: routes.signup,
 		component: Signup,
-		key: 'signup',
+		key: routes.signup,
 	},
 	{
 		exact: false,
-		path: '/recover',
+		path: routes.recover,
 		component: Recover,
-		key: 'recover',
+		key: routes.recover,
 	},
 ]
 

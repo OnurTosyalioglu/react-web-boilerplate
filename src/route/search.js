@@ -1,6 +1,8 @@
 import Search from '../page/share/share/Share'
 import SearchDetail from '../page/share/shareDetail/ShareDetail'
 
+import routes from './routes'
+
 const search = [
 	{
 		exact: false,

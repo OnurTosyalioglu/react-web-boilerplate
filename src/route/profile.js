@@ -1,11 +1,13 @@
 import Profile from '../page/profile/profile/Profile'
 
+import routes from './routes'
+
 const profile = [
 	{
 		exact: false,
-		path: '/profile',
+		path: routes.profile,
 		component: Profile,
-		key: 'profile',
+		key: routes.profile,
 	},
 ]
 

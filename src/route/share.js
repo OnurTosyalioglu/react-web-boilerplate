@@ -1,18 +1,20 @@
 import Share from '../page/share/share/Share'
 import ShareDetail from '../page/share/shareDetail/ShareDetail'
 
+import routes from './routes'
+
 const share = [
 	{
 		exact: false,
-		path: '/share',
+		path: routes.share,
 		component: Share,
-		key: 'share',
+		key: routes.share,
 	},
 	{
 		exact: false,
-		path: '/share_detail',
-		component: ,
-		key: 'share_detail',
+		path: routes.shareDetail,
+		component: ShareDetail,
+		key: routes.shareDetail,
 	},
 ]
 
