@@ -7,7 +7,7 @@ import { ThemeProvider } from '@material-ui/core'
 import store from './redux/store/index'
 import i18n from './locale/i18n'
 import theme from './style/theme'
-import Main from './page/landing/main/Main'
+import Main from './page/main/Main'
 
 const App = () => {
   return <Fragment>

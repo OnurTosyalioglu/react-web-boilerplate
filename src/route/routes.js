@@ -4,6 +4,8 @@ export default {
 	signup: '/signup',
 	recover: '/recover',
 	inbox: '/inbox',
+	chat: '/chat',
+	conversation: '/conversation',
 	profile: '/profile',
 	facebook: '',
 	twitter: '',

@@ -1,14 +1,14 @@
-import Inbox from '../page/chat/inbox/Inbox'
-import Conversation from '../page/chat/conversation/Conversation'
+import Chat from '../page/inbox/chat/Chat'
+import Conversation from '../page/inbox/conversation/Conversation'
 
 import routes from './routes'
 
 const chat = [
 	{
 		exact: false,
-		path: routes.inbox,
-		component: Inbox,
-		key: 'inbox',
+		path: routes.chat,
+		component: Chat,
+		key: routes.chat,
 	},
 	{
 		exact: false,

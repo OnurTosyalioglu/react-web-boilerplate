@@ -5,7 +5,7 @@ import routes from './routes'
 const landing = [
 	{
 		exact: true,
-		path: '/',
+		path: routes.home,
 		component: Home,
 		key: routes.home,
 	},
