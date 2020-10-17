@@ -1,3 +1,7 @@
+## Avoid shared runner stuck, create local runner
+## Avoid tags for local runner
+## Avoid ssh key format
+
 image: node:10.22.1-alpine3.11
 
 stages:
@@ -37,4 +41,10 @@ test:
 deploy:
   image: alpine
   stage: deploy
-
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+    - chmod 400 ~/.ssh/id_dsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav build/ $USER@$HOST:$PATH
