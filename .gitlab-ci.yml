@@ -49,4 +49,4 @@ deploy:
     - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
     - chmod 400 ~/.ssh/id_dsa
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-    - rsync -rav build/ $USER@$HOST:$PATH
+    - rsync -rav build/ $USER@$HOST:$FOLDER
