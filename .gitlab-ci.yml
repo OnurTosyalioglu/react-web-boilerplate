@@ -3,6 +3,7 @@
 ## Avoid ssh key format
 ## Bug: deactivate shared runner on project initialization,
 ##      don't reactivate shared runner 
+## Avoid don't use $PATH as a varible
 
 image: node:10.22.1-alpine3.11
 
