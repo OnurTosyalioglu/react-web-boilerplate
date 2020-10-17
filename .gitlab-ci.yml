@@ -1,6 +1,8 @@
 ## Avoid shared runner stuck, create local runner
 ## Avoid tags for local runner
 ## Avoid ssh key format
+## Bug: deactivate shared runner on project initialization,
+##      don't reactivate shared runner 
 
 image: node:10.22.1-alpine3.11
 
