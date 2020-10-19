@@ -9,7 +9,15 @@ import i18n from './locale/i18n'
 import theme from './style/theme'
 import Main from './page/main/Main'
 
+import ReactGA from 'react-ga'
+import analytics from './config/analytics'
+
 const App = () => {
+	useEffect(() => {  
+		ReactGA.initialize(analytics.trackingId)
+		ReactGA.pageview(window.location.pathname)
+	})
+
   return <Fragment>
 		<Provider store={store}>
       <I18nextProvider i18n={i18n}>
