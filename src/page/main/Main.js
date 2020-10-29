@@ -1,14 +1,6 @@
-import React, { 
-	Fragment,
-	useState,
-	useEffect,
-} from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 
-import {
-	BrowserRouter,
-	Switch,
-	Route,
-} from 'react-router-dom'
+import { Router, Switch, Route } from 'react-router-dom'
 
 import ReactGA from 'react-ga'
 import analytics from '../../config/analytics'
@@ -27,36 +19,38 @@ import Navbar from '../../component/main/navbar/Navbar'
 import Footer from '../../component/main/footer/Footer'
 
 const Main = (props) => {
-	const { t, i18n } = useTranslation()
-	const { classes } = props
-	const history = createBrowserHistory()
+  const { t, i18n } = useTranslation()
+  const { classes } = props
+  const history = createBrowserHistory()
 
-	history.listen(location => {
+  history.listen((location) => {
     ReactGA.initialize(analytics.trackingId)
     ReactGA.set({ page: location.pathname })
     ReactGA.pageview(location.pathname)
   })
 
-	useEffect(() => {  })
+  useEffect(() => {})
 
-	return <Fragment>
-		<BrowserRouter history={history}>
-			<Navbar /
-			<Switch>
-				{
-					index.map(v => <Route 
-						key={v.key} 
-						component={v.component} 
-						path={v.path} 
-						exact={v.exact}/>)
-				}
-				<Footer />
-			</Switch>
-		</BrowserRouter>
-	</Fragment>
+  return (
+    <Fragment>
+      <Router history={history}>
+        <Navbar />
+        <Switch>
+          {index.map((v) => (
+            <Route
+              key={v.key}
+              component={v.component}
+              path={v.path}
+              exact={v.exact}
+            />
+          ))}
+        </Switch>
+        <Footer />
+      </Router>
+    </Fragment>
+  )
 }
 
 Main.propTypes = props
 
 export default withStyles(styles)(Main)
-
